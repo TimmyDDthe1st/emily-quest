@@ -1,6 +1,6 @@
 if(room == Room1){
-	playerMovement(gamepad_axis_value(playerCount, gp_axislh), gamepad_button_check_pressed(playerCount, gp_face1));
-	animateCharacter(sEmilyWalk, sEmilyIdle, sEmilyJump, gamepad_axis_value(playerCount, gp_axislh), 0);
+	playerMovement(gamepad_stick_value_x, button1);
+	animateCharacter(sEmilyWalk, sEmilyIdle, sEmilyJump, gamepad_stick_value_x, 0);
 } else {
 	onGround = true;
 	playerMovementTopDown(gamepad_axis_value(playerCount, gp_axislh), gamepad_axis_value(playerCount, gp_axislv), gamepad_button_check_pressed(playerCount, gp_face2), oEmily);
