@@ -1,10 +1,10 @@
-mousePosX = device_mouse_x_to_gui(0);
-mousePosY = device_mouse_y_to_gui(0);
+//mousePosX = device_mouse_x_to_gui(1);
+//mousePosY = device_mouse_y_to_gui(0);
 
-if(mouse_check_button_pressed(mb_left)){
-	if(position_meeting(mousePosX, mousePosY, id)){
+for(var i=0; i<2; i++) {
+	if device_mouse_check_button_pressed(i, mb_left){ 
 		button1 = true;
+	} else {
+		button1 = false;
 	}
-} else {
-	button1 = false;
 }
