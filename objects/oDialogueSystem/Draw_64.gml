@@ -1,5 +1,3 @@
-
-
 if(current_message == "") {
 
 } else {

@@ -1,7 +1,7 @@
 if(distance_to_object(oTim) < 10 || distance_to_object(oEmily) < 10){
 	oPressX.x = x + 50;
 	oPressX.y = y;
-	if(gamepad_button_check_released(0, gp_face3) || gamepad_button_check_released(1, gp_face3)){
+	if(button2){
 		audio_play_sound(click, 1000, false);
 		myDialogue = CreateDialogue();
 		AddDialogue(myDialogue, "You saved our wedding day from the ZOMBIE INVASION!");

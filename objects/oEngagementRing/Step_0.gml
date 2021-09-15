@@ -1,8 +1,9 @@
 if(distance_to_object(oTim) < 10 || distance_to_object(oEmily) < 10){
 			oPressX.x = x;
 	oPressX.y = y-10;
+	global.hasEngagementRing = true;
 	// TODO show press x button for all collectibles
-	if(gamepad_button_check_released(0, gp_face3) || gamepad_button_check_released(1, gp_face3)){
+	if(button2){
 				audio_play_sound(click, 1, 0);
 		myDialogue = CreateDialogue();
 		AddDialogue(myDialogue, "Now we've been engaged for a while...");
@@ -11,4 +12,6 @@ if(distance_to_object(oTim) < 10 || distance_to_object(oEmily) < 10){
 		AddDialogue(myDialogue, "Now it's time to tie the knott...");
 		PlayDialogue(myDialogue);
 	}
+} else {
+	global.hasEngagementRing = false;
 }

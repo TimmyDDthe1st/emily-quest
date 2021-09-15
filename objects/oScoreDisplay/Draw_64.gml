@@ -1,1 +1,1 @@
-draw_text_transformed(40, 40, string(global.score) + "/50", 10, 10, 0);
+draw_text(40, 40, string(global.score) + "/50");
