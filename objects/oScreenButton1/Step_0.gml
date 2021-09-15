@@ -3,7 +3,9 @@
 
 for(var i=0; i<2; i++) {
 	if device_mouse_check_button_pressed(i, mb_left){ 
-		button1 = true;
+		if(position_meeting(mousePosX, mousePosY, id)){
+			button1 = true;
+		}
 	} else {
 		button1 = false;
 	}
